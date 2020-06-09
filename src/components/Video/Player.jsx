@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { setOffset } from '../../store/actions';
 
@@ -16,6 +16,7 @@ class Player extends React.Component {
           src={`https://www.youtube.com/embed/${video.youtubeId}?start=${offSet}&autoplay=1`}
           alt='Card Video cap'
           allow='autoplay; encrypted-media'
+          title='thumb-vid'
         />
         {video.quotes.map((quote, index) => (
           <div

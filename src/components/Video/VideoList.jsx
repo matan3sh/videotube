@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import VideoPreview from './VideoPreview.jsx';
 
 const VideoList = ({ videos, onSetVideo }) => {
