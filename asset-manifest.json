@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/matan3sh.github.io/videotube/static/css/main.417ed544.chunk.css",
+    "main.js": "/matan3sh.github.io/videotube/static/js/main.9d7e11f8.chunk.js",
+    "main.js.map": "/matan3sh.github.io/videotube/static/js/main.9d7e11f8.chunk.js.map",
+    "runtime-main.js": "/matan3sh.github.io/videotube/static/js/runtime-main.01023df7.js",
+    "runtime-main.js.map": "/matan3sh.github.io/videotube/static/js/runtime-main.01023df7.js.map",
+    "static/js/2.c66ceb12.chunk.js": "/matan3sh.github.io/videotube/static/js/2.c66ceb12.chunk.js",
+    "static/js/2.c66ceb12.chunk.js.map": "/matan3sh.github.io/videotube/static/js/2.c66ceb12.chunk.js.map",
+    "index.html": "/matan3sh.github.io/videotube/index.html",
+    "precache-manifest.74186bc14062a722fdbc33ac1aeb0088.js": "/matan3sh.github.io/videotube/precache-manifest.74186bc14062a722fdbc33ac1aeb0088.js",
+    "service-worker.js": "/matan3sh.github.io/videotube/service-worker.js",
+    "static/css/main.417ed544.chunk.css.map": "/matan3sh.github.io/videotube/static/css/main.417ed544.chunk.css.map",
+    "static/js/2.c66ceb12.chunk.js.LICENSE.txt": "/matan3sh.github.io/videotube/static/js/2.c66ceb12.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01023df7.js",
+    "static/js/2.c66ceb12.chunk.js",
+    "static/css/main.417ed544.chunk.css",
+    "static/js/main.9d7e11f8.chunk.js"
+  ]
+}
