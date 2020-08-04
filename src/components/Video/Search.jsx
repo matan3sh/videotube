@@ -1,38 +1,32 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { searchVideo } from '../../store/actions';
+import React, { useState } from "react";
+import { connect } from "react-redux";
+import { searchVideo } from "../../store/actions";
 
-class Search extends React.Component {
-  state = { txt: '' };
+const Search = ({ searchVideo }) => {
+  const [txt, setTxt] = useState("");
 
-  onChange = (e) => {
-    let { name, value } = e.target;
-    this.setState({ [name]: value }, () =>
-      this.props.searchVideo(this.state.txt)
-    );
-  };
-
-  onSumbit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
-    this.props.searchVideo(this.state.txt);
+    searchVideo(txt);
   };
 
-  render() {
-    return (
-      <React.Fragment>
-        <form onSubmit={this.onSumbit} style={{ width: '100%' }}>
-          <input
-            type='text'
-            name='txt'
-            placeholder='Search Song...'
-            value={this.state.txt}
-            onChange={this.onChange}
-          />
-        </form>
-      </React.Fragment>
-    );
-  }
-}
+  return (
+    <>
+      <form onSubmit={onSubmit} style={{ width: "100%" }}>
+        <input
+          type="text"
+          name="txt"
+          placeholder="Search Song..."
+          value={txt}
+          onChange={(e) => {
+            setTxt(e.target.value);
+            searchVideo(txt);
+          }}
+        />
+      </form>
+    </>
+  );
+};
 
 const mapDispatchToProps = {
   searchVideo,
